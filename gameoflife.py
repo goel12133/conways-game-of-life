@@ -9,7 +9,7 @@ screen = pygame.display.set_mode((1280, 720))
 clock = pygame.time.Clock()
 running = True
 
-cellsize = 10 
+cellsize = 5
 
 # Any live cell with fewer than two live neighbours dies, as if by underpopulation.
 # Any live cell with two or three live neighbours lives on to the next generation.
