@@ -77,18 +77,11 @@ glider = [
 ]
 
 blinker = [
-    (1,0),
-    (1,1),
-    (1,2),
+    (1,0),(1,1),(1,2),
 ]
 
-toad = [
-    (2,1),
-    (3,1),
-    (4,1),
-    (1,2),
-    (2,2),
-    (3,2),
+q_pentomino = [
+    (1,1),(2,1),(3,1),(4,1),(4,2)
 ]
 
 pulsar = [
@@ -111,7 +104,7 @@ gosper = [
 arrangements = {
     pygame.K_1: glider,
     pygame.K_2: blinker,
-    pygame.K_3: toad,
+    pygame.K_3: q_pentomino,
     pygame.K_4: pulsar,
     pygame.K_5: gosper,
 }
