@@ -170,10 +170,10 @@ while running:
 
     # gridlines
     for x in range(0, 1280, cellsize):
-        pygame.draw.line(screen, (40, 40, 40), (x, 0), (x, 720))
+        pygame.draw.line(screen, (255, 255, 255), (x, 0), (x, 720))
 
     for y in range(0, 720, cellsize):
-        pygame.draw.line(screen, (40, 40, 40), (0, y), (1280, y))
+        pygame.draw.line(screen, (255, 255, 255), (0, y), (1280, y))
 
     # alive 
     for x, y in alivecells:
@@ -184,7 +184,7 @@ while running:
         )
 
     pygame.display.set_caption(
-        f"Game of Life | Generation {gen} | Cells {len(alivecells)} | {'Paused' if paused else 'Running'}"
+        f"Game of Life | Generation {gen} | Cells {len(alivecells)} | {'Paused' if paused}"
     )
 
     pygame.display.flip()
